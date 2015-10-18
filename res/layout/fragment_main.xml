@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/purduebg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:gravity="center_vertical">
+	
+                    <TextView
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textSize="25sp"
+			            android:paddingTop="5sp"
+			            android:text="Interest Calculator"
+			            android:textStyle="bold|italic" 
+			            android:textColor="#33b5e5"
+			            android:gravity="center"/>
+                    </TableLayout>
+    </LinearLayout>
+    
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+
+	    <TableLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+			android:gravity="center_vertical">
+	
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:gravity="center_vertical">
+	        
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="8sp"
+		            android:text="Bank :"
+		            android:textColor="#33b5e5" />
+		
+		        <Spinner
+		            android:id="@+id/bankSpinner"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textColor="#33b5e5" />
+		        
+		        <Button
+		            android:id="@+id/findRate"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="10sp"
+		            android:paddingTop="5sp"
+		            android:text="Fetch Rate"
+		            android:textColor="#FFFFFF" />
+		
+	        </TableRow>
+	        
+	        
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:text="Name :"
+		            android:textColor="#33b5e5" />
+		
+		        <EditText
+		            android:id="@+id/nameField"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:textColor="#33b5e5"
+		            android:hint="Please enter your name here"/>"
+		
+	        
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:text="Gender :"
+		            android:textColor="#33b5e5" />
+		<RadioGroup 
+		    android:id="@+id/radioSelection"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10sp">
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male" 
+            android:textColor="#33b5e5"
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#33b5e5" />
+        </RadioGroup>
+ 
+		
+	        
+	        </TableRow>
+	
+		        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:text="Principal :"
+		            android:textColor="#33b5e5" />
+		
+		        <EditText
+		            android:id="@+id/principalField"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:hint="Enter principal here"
+		            android:textColor="#33b5e5"/>
+		
+	        
+	        </TableRow>
+	        	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:text="Rate :"
+		            android:textColor="#33b5e5" />
+		<TextView
+		            android:id="@+id/rateDisplay"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:textColor="#33b5e5" />
+		        
+		
+	        
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:text="Time :"
+		            android:textColor="#33b5e5" />
+		
+		        <EditText
+		            android:id="@+id/timeField"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:hint="Enter time in years"
+		            android:textColor="#33b5e5"/>
+		
+	        
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="15sp"
+	            android:gravity="center" >
+	            <RadioGroup 
+		    android:id="@+id/chosenInterest"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10sp">
+		        <RadioButton
+            android:id="@+id/siRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simple Interest" 
+            android:textColor="#33b5e5"
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/ciRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compound Interest"
+            android:textColor="#33b5e5" />
+		</RadioGroup>
+	        
+	        </TableRow>
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center" >
+	            
+		        <Button
+		            android:id="@+id/submitB"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="10sp"
+		            android:paddingTop="5sp"
+		            android:text="Submit"
+		            android:textColor="#FFFFFF"/>"
+		<Button
+		            android:id="@+id/resetB"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="10sp"
+		            android:paddingTop="5sp"
+		            android:text="Reset"
+		            android:textColor="#FFFFFF" />
+		        
+		
+	        
+	        </TableRow>
+	    <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	            
+		        <TextView
+		            android:id="@+id/comments"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="25sp"
+		            android:paddingLeft="15sp"
+		            android:paddingTop="5sp"
+		            android:textColor="#33b5e5" />
+	        
+	      </TableRow>  
+	    </TableLayout>
+	</LinearLayout>
+   </LinearLayout>
